@@ -15,7 +15,9 @@ $ composer require kayw-geek/domain-dns
 <?php
 use KaywGeek\Dns\Dns;
 
-$serverIp = (new Dns('baidu.com','114.114.114.114'))->ParsingDomain();
+$myIp = '124.64.165.53';
+$domain = 'google.com';
+$serverIp = (new Dns($domain,$myIp))->ParsingDomain();
 ```
 
 ## License
